@@ -2,7 +2,7 @@ import json
 
 from bot.bot import Bot
 
-with open("./token.txt") as f:
+with open("./.token") as f:
     TOKEN = f.read().strip()
 
 if __name__ == "__main__":
