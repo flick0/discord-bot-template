@@ -2,9 +2,8 @@ import json
 
 from bot.bot import Bot
 
-with open("./config.json") as f:
-    config = json.load(f)
-    TOKEN = config["token"]
+with open("./token.txt") as f:
+    TOKEN = f.read().strip()
 
 if __name__ == "__main__":
     Bot().run(TOKEN)
